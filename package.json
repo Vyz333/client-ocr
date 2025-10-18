@@ -77,7 +77,6 @@
     "prepublishOnly": "npm run build:lib",
     "type-check": "tsc --noEmit",
     "deploy": "npm run build && gh-pages -d dist",
-    "prepublish": "cp README.npm.md README.md.bak && cp README.npm.md README.md",
     "postpublish": "mv README.md.bak README.md",
     "release": "npm run build:lib && npm publish"
   },
